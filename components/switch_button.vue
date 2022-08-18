@@ -13,18 +13,11 @@
   </view>
 </template>
 
-<script>
-export default {
-  setup() {
-    let ischeckedSwitch = ref(false);
-    const changeSwitch = () => {
-      ischeckedSwitch.value = !ischeckedSwitch.value;
-    };
-    return {
-      ischeckedSwitch,
-      changeSwitch,
-    };
-  },
+<script setup>
+import { ref } from "vue";
+let ischeckedSwitch = ref(false);
+const changeSwitch = () => {
+  ischeckedSwitch.value = !ischeckedSwitch.value;
 };
 </script>
 

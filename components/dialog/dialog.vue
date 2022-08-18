@@ -1,30 +1,4 @@
-<!-- 
-	引入方式一：
-	import Dialog from '@/components/dialog/dialog'
-	Dialog.show({
-		title: '提示',
-		showClose: true,
-		icon: 'success',
-		duration: 3000,
-		contentColor: '#fff',
-		content: '我是内容',
-		confirmText: '确认',
-		cancelText: '取消',
-		confirm: () => {
-			console.log('点击确认')
-		},
-		cancel: () => {
-			console.log('点击取消')
-		}
-	})
-	Dialog.hide()
-	
-	引入方式二：
-	import { getCurrentInstance  } from 'vue'
-	const instance = getCurrentInstance()
-	instance.proxy.$dialog.show({})
-	instance.proxy.$dialog.hide()
- -->
+
 <template>
 	<view class="dialog">
 		<view class="body">
