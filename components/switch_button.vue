@@ -1,14 +1,10 @@
 <template>
   <view
     @click="changeSwitch"
-    :class="
-      ischeckedSwitch ? 'switch_button switch_button_checked' : 'switch_button'
-    "
+    :class="ischeckedSwitch ? 'switch_button switch_button_checked' : 'switch_button'"
   >
     <view
-      :class="
-        ischeckedSwitch ? 'switch_circle switch_checked' : 'switch_circle'
-      "
+      :class="ischeckedSwitch ? 'switch_circle switch_checked' : 'switch_circle'"
     ></view>
   </view>
 </template>
